@@ -7,7 +7,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Овощи</title>
+	<title>Личный кабинет</title>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
 </head>
 
@@ -348,169 +348,314 @@
     </div>
 </header>
 		<main class="content">
-			<section class="catalog">
+			<section class="account">
 				<div class="container">
-					<div class="catalog__inner">
-						<div class="catalog__sidebar">
-							<div class="catalog__items">
-								<div class="catalog__item">
-									<div class="catalog__item-show item-show item-show--active">
-										<div class="catalog__item-title">Овощи</div>
-										<div class="catalog__item-btn">
-											<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1 1L5.29289 5.29289C5.68342 5.68342 6.31658 5.68342 6.70711 5.29289L11 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
-											</svg>
-										</div>
-									</div>
-									<div class="catalog__item-hidden item-hidden item-hidden--active">
-										<ul class="catalog__item-list">
-											<li><a href="">Перец</a></li>
-											<li><a href="">Картофель</a></li>
-											<li><a href="">Помидоры</a></li>
-										</ul>
-									</div>
-								</div>
+					<div class="account__inner tabs-inner">
+						<div class="breadcrumbs">
+							<div class="breadcrumbs__items">
+								<a href="index.html" class="breadcrumbs__item">Главная</a>
+								<span class="breadcrumbs__item breadcrumbs__item--active">Личный кабинет</span>
 							</div>
 						</div>
-						<div class="catalog__content">
-							<div class="breadcrumbs">
-								<div class="breadcrumbs__items">
-									<a href="index.html" class="breadcrumbs__item">Главная</a>
-									<a href="" class="breadcrumbs__item">Каталог</a>
-									<span class="breadcrumbs__item breadcrumbs__item--active">Овощи</span>
+						<h1 class="account__title h2">Личный кабинет</h1>
+						<div class="account__wrap">
+							<div class="account__sidebar">
+								<div class="account__tabs">
+									<div data-tab-path="1" class="account__tab tab tab--active">
+										<i>
+											<img src="img/orders-icon.svg" alt="">
+										</i>
+										<span>Заказы</span>
+									</div>
+									<div data-tab-path="2" class="account__tab tab">
+										<i>
+											<img src="img/profile-icon.svg" alt="">
+										</i>
+										<span>Профиль</span>
+									</div>
+									<div data-tab-path="3" class="account__tab tab">
+										<i>
+											<img src="img/favourites-icon.svg" alt="">
+										</i>
+										<span>Избранное</span>
+									</div>
+									<a href="" class="account__tab account__tab--exit">
+										<i>
+											<img src="img/exit-icon.svg" alt="">
+										</i>
+										<span>Выйти</span>
+									</a>
 								</div>
 							</div>
-							<h1 class="catalog__title h2">
-								Овощи
-								<span class="catalog__number-products">5 товаров</span>
-							</h1>
-							<div class="catalog__cards catalog__cards2">
-								<div class="product-card">
-									<div class="product-card__top">
-										<a class="product-card__img" href="">
-											<img src="img/product-card__img2.png" alt="">
-										</a>
-										<button class="product-card__favorite favorite btn">
-											<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.63931 2.01073L10 2.38643L10.3607 2.01073C12.8646 -0.597339 17.3166 0.350241 18.9159 3.51494C19.6998 5.06631 19.8102 7.20034 18.5249 9.7697C17.2589 12.3007 14.6395 15.2447 9.99999 18.3969C5.3605 15.245 2.74107 12.3011 1.47506 9.77023C0.189843 7.20093 0.300147 5.06686 1.08413 3.51541C2.68343 0.350508 7.13548 -0.5973 9.63931 2.01073Z" stroke="#FE99C5"></path>
-											</svg>
-										</button>
-									</div>
-									<div class="product-card__desc">
-										<div class="product-card__subtitle">Производитель</div>
-										<a href="" class="product-card__title">Перец болгарский</a>
-										<div class="product-card__group">
-											<div class="product-card__price">310,00&nbsp;₽</div>
-											<div class="product-card__weight">300&nbsp;г.</div>
+							<div class="account__content">
+								<div data-content-path="1" class="tab__content tab__content--active">
+									<div class="account__subtitle">Заказы</div>
+									<div class="orders__items">
+										<div class="orders__item">
+											<div class="orders__item-show item-show">
+												<div class="orders__item-top">
+													<div class="orders__item-group">
+														<div class="orders__number">Заказ №1234 от 24.04.2024</div>
+														<div class="orders__status">
+															<div class="orders__status-item" style="background: #6CAFFE">Оплачено</div>
+															<div class="orders__status-item" style="background: #55C16D">Доставка</div>
+														</div>
+													</div>
+													<div class="orders__item-group">
+														<div class="orders__price">2 005.50 ₽</div>
+														<div class="orders__price-text">2 товара, 1.4 кг</div>
+													</div>
+												</div>
+												<div class="orders__item-bottom">
+													<div class="orders__time">Доставим 26 апреля после 12:00</div>
+													<div class="orders__item-btn">
+														<span>Показать заказ</span>
+														<i>
+															<img src="img/arrow-bottom.svg" alt="">
+														</i>
+													</div>
+												</div>
+											</div>
+											<div class="orders__item-hidden item-hidden">
+												<div class="orders__subitems">
+													<div class="orders__subitem">
+														<div class="orders__subitem-title">Получатель</div>
+														<div class="orders__subitem-text">Иванов Дмитрий</div>
+														<a class="orders__subitem-phone" href="tel:+79824536554">+7 982 453 65 54</a>
+														<a class="orders__subitem-email" href="emailto:ivanov@mail.ru">ivanov@mail.ru</a>
+													</div>
+													<div class="orders__subitem">
+														<div class="orders__subitem-title">Способ оплаты</div>
+														<div class="orders__subitem-text">Картой онлайн</div>
+													</div>
+													<div class="orders__subitem">
+														<div class="orders__subitem-title">Адрес доставки</div>
+														<div class="orders__subitem-text">г. Москва, ул. Советская, д.23, кв.155</div>
+													</div>
+												</div>
+												<div class="orders__cards">
+													<div class="order-card">
+														<div class="order-card__left">
+															<div class="order-card__img">
+																<img src="img/order-card__img.png" alt="">
+															</div>
+															<div class="order-card__group">
+																<div class="order-card__title">Капуста китайская</div>
+																<div class="order-card__subgroup">
+																	<div class="order-card__weight">1,8 кг</div>
+																	<div class="order-card__name">ИП Панов В.В.</div>
+																</div>
+															</div>
+														</div>
+														<div class="order-card__right">
+															<div class="order-card__group">
+																<div class="orders__price">248,00 ₽</div>
+																<div class="orders__price-text">2 шт х 124.00 Р, 2 кг</div>
+															</div>
+														</div>
+													</div>
+													<div class="order-card">
+														<div class="order-card__left">
+															<div class="order-card__img">
+																<img src="img/order-card__img2.png" alt="">
+															</div>
+															<div class="order-card__group">
+																<div class="order-card__title">Фарш говяжий</div>
+																<div class="order-card__subgroup">
+																	<div class="order-card__weight">1,8 кг</div>
+																	<div class="order-card__name">ИП Панов В.В.</div>
+																</div>
+															</div>
+														</div>
+														<div class="order-card__right">
+															<div class="order-card__group">
+																<div class="orders__price">350,00 ₽</div>
+																<div class="orders__price-text">2 шт х 124.00 Р, 2 кг</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="orders__item-btn orders__btn-hide">
+													<span>Скрыть заказ</span>
+													<i>
+														<img src="img/arrow-bottom.svg" alt="">
+													</i>
+												</div>
+											</div>
 										</div>
-										<button class="product-card__btn btn btn-green">
-											<span>В&nbsp;корзину</span>
+										<div class="orders__item">
+											<div class="orders__item-show item-show">
+												<div class="orders__item-top">
+													<div class="orders__item-group">
+														<div class="orders__number">Заказ №1234 от 24.04.2024</div>
+														<div class="orders__status">
+															<div class="orders__status-item" style="background: #6CAFFE">Оплачено</div>
+															<div class="orders__status-item" style="background: #55C16D">Доставка</div>
+														</div>
+													</div>
+													<div class="orders__item-group">
+														<div class="orders__price">2 005.50 ₽</div>
+														<div class="orders__price-text">2 товара, 1.4 кг</div>
+													</div>
+												</div>
+												<div class="orders__item-bottom">
+													<div class="orders__time">Доставим 26 апреля после 12:00</div>
+													<div class="orders__item-btn">
+														<span>Показать заказ</span>
+														<i>
+															<img src="img/arrow-bottom.svg" alt="">
+														</i>
+													</div>
+												</div>
+											</div>
+											<div class="orders__item-hidden item-hidden">
+												<div class="orders__subitems">
+													<div class="orders__subitem">
+														<div class="orders__subitem-title">Получатель</div>
+														<div class="orders__subitem-text">Иванов Дмитрий</div>
+														<a class="orders__subitem-phone" href="tel:+79824536554">+7 982 453 65 54</a>
+														<a class="orders__subitem-email" href="emailto:ivanov@mail.ru">ivanov@mail.ru</a>
+													</div>
+													<div class="orders__subitem">
+														<div class="orders__subitem-title">Способ оплаты</div>
+														<div class="orders__subitem-text">Картой онлайн</div>
+													</div>
+													<div class="orders__subitem">
+														<div class="orders__subitem-title">Адрес доставки</div>
+														<div class="orders__subitem-text">г. Москва, ул. Советская, д.23, кв.155</div>
+													</div>
+												</div>
+												<div class="orders__cards">
+													<div class="order-card">
+														<div class="order-card__left">
+															<div class="order-card__img">
+																<img src="img/order-card__img.png" alt="">
+															</div>
+															<div class="order-card__group">
+																<div class="order-card__title">Капуста китайская</div>
+																<div class="order-card__subgroup">
+																	<div class="order-card__weight">1,8 кг</div>
+																	<div class="order-card__name">ИП Панов В.В.</div>
+																</div>
+															</div>
+														</div>
+														<div class="order-card__right">
+															<div class="order-card__group">
+																<div class="orders__price">248,00 ₽</div>
+																<div class="orders__price-text">2 шт х 124.00 Р, 2 кг</div>
+															</div>
+														</div>
+													</div>
+													<div class="order-card">
+														<div class="order-card__left">
+															<div class="order-card__img">
+																<img src="img/order-card__img2.png" alt="">
+															</div>
+															<div class="order-card__group">
+																<div class="order-card__title">Фарш говяжий</div>
+																<div class="order-card__subgroup">
+																	<div class="order-card__weight">1,8 кг</div>
+																	<div class="order-card__name">ИП Панов В.В.</div>
+																</div>
+															</div>
+														</div>
+														<div class="order-card__right">
+															<div class="order-card__group">
+																<div class="orders__price">350,00 ₽</div>
+																<div class="orders__price-text">2 шт х 124.00 Р, 2 кг</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="orders__item-btn orders__btn-hide">
+													<span>Скрыть заказ</span>
+													<i>
+														<img src="img/arrow-bottom.svg" alt="">
+													</i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-content-path="2" class="tab__content tab__content--profile">
+									<div class="account__subtitle">Профиль</div>
+									<div class="account__info">Вы можете менять свои личные данные</div>
+									<div class="profile">
+										<form class="profile-form">
+											<div class="profile-form__group">
+												<span class="input-title">Фамилия и Имя</span>
+												<input type="text" placeholder="">
+											</div>
+											<div class="profile-form__group">
+												<span class="input-title">Сумма заказов</span>
+												<input type="text" placeholder="">
+											</div>
+											<div class="profile-form__group">
+												<span class="input-title">Контактный телефон</span>
+												<input type="tel" placeholder="">
+											</div>
+											<div class="profile-form__group">
+												<span class="input-title">Контактный E-mail</span>
+												<input type="email" placeholder="">
+											</div>
+										</form>
+										<button class="profile__btn btn btn-green">
+											<span>Редактировать</span>
 										</button>
 									</div>
 								</div>
-								<div class="product-card">
-									<div class="product-card__top">
-										<a class="product-card__img" href="">
-											<img src="img/product-card__img17.png" alt="">
-										</a>
-										<button class="product-card__favorite favorite btn">
-											<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.63931 2.01073L10 2.38643L10.3607 2.01073C12.8646 -0.597339 17.3166 0.350241 18.9159 3.51494C19.6998 5.06631 19.8102 7.20034 18.5249 9.7697C17.2589 12.3007 14.6395 15.2447 9.99999 18.3969C5.3605 15.245 2.74107 12.3011 1.47506 9.77023C0.189843 7.20093 0.300147 5.06686 1.08413 3.51541C2.68343 0.350508 7.13548 -0.5973 9.63931 2.01073Z" stroke="#FE99C5"/>
-											</svg>
-										</button>
-									</div>
-									<div class="product-card__desc">
-										<div class="product-card__subtitle">Производитель</div>
-										<a href="" class="product-card__title">Баклажан ростовский</a>
-										<div class="product-card__group">
-											<div class="product-card__price">330,00 ₽</div>
-											<div class="product-card__weight">300 г.</div>
+								<div data-content-path="3" class="tab__content">
+									<div class="account__subtitle">Избранное</div>
+									<div class="favourites__cards">
+										<div class="product-card">
+											<div class="product-card__top">
+												<a class="product-card__img" href="">
+													<img src="img/product-card__img5.png" alt="">
+												</a>
+												<button class="product-card__favorite favorite btn">
+													<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.63931 2.01073L10 2.38643L10.3607 2.01073C12.8646 -0.597339 17.3166 0.350241 18.9159 3.51494C19.6998 5.06631 19.8102 7.20034 18.5249 9.7697C17.2589 12.3007 14.6395 15.2447 9.99999 18.3969C5.3605 15.245 2.74107 12.3011 1.47506 9.77023C0.189843 7.20093 0.300147 5.06686 1.08413 3.51541C2.68343 0.350508 7.13548 -0.5973 9.63931 2.01073Z" stroke="#FE99C5"/>
+													</svg>
+												</button>
+											</div>
+											<div class="product-card__desc">
+												<div class="product-card__subtitle">Производитель</div>
+												<a href="" class="product-card__title">Мясо в маринаде «Кавказский», шашлык из филе индейки</a>
+												<div class="product-card__group">
+													<div class="product-card__price">1 230,00 ₽</div>
+													<div class="product-card__weight">2 кг.</div>
+												</div>
+												<button class="product-card__btn btn btn-green">
+													<span>В корзину</span>
+												</button>
+											</div>
 										</div>
-										<button class="product-card__btn btn btn-green">
-											<span>В корзину</span>
-										</button>
-									</div>
-								</div>
-								<div class="product-card">
-									<div class="product-card__top">
-										<a class="product-card__img" href="">
-											<img src="img/product-card__img4.png" alt="">
-										</a>
-										<button class="product-card__favorite favorite btn">
-											<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.63931 2.01073L10 2.38643L10.3607 2.01073C12.8646 -0.597339 17.3166 0.350241 18.9159 3.51494C19.6998 5.06631 19.8102 7.20034 18.5249 9.7697C17.2589 12.3007 14.6395 15.2447 9.99999 18.3969C5.3605 15.245 2.74107 12.3011 1.47506 9.77023C0.189843 7.20093 0.300147 5.06686 1.08413 3.51541C2.68343 0.350508 7.13548 -0.5973 9.63931 2.01073Z" stroke="#FE99C5"></path>
-											</svg>
-										</button>
-									</div>
-									<div class="product-card__desc">
-										<div class="product-card__subtitle">Производитель</div>
-										<a href="" class="product-card__title">Картофель молодой</a>
-										<div class="product-card__group">
-											<div class="product-card__price">270,00&nbsp;₽</div>
-											<div class="product-card__weight">300&nbsp;г.</div>
+										<div class="product-card">
+											<div class="product-card__top">
+												<a class="product-card__img" href="">
+													<img src="img/product-card__img6.png" alt="">
+												</a>
+												<button class="product-card__favorite favorite btn">
+													<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.63931 2.01073L10 2.38643L10.3607 2.01073C12.8646 -0.597339 17.3166 0.350241 18.9159 3.51494C19.6998 5.06631 19.8102 7.20034 18.5249 9.7697C17.2589 12.3007 14.6395 15.2447 9.99999 18.3969C5.3605 15.245 2.74107 12.3011 1.47506 9.77023C0.189843 7.20093 0.300147 5.06686 1.08413 3.51541C2.68343 0.350508 7.13548 -0.5973 9.63931 2.01073Z" stroke="#FE99C5"/>
+													</svg>
+												</button>
+											</div>
+											<div class="product-card__desc">
+												<div class="product-card__subtitle">Производитель</div>
+												<a href="" class="product-card__title">Мясо в маринаде «Кавказский», шашлык из филе бедра индейки</a>
+												<div class="product-card__group">
+													<div class="product-card__price">1 270,00 ₽</div>
+													<div class="product-card__weight">2 кг.</div>
+												</div>
+												<button class="product-card__btn btn btn-green">
+													<span>В корзину</span>
+												</button>
+											</div>
 										</div>
-										<button class="product-card__btn btn btn-green">
-											<span>В&nbsp;корзину</span>
-										</button>
-									</div>
-								</div>
-								<div class="product-card">
-									<div class="product-card__top">
-										<a class="product-card__img" href="">
-											<img src="img/product-card__img15.png" alt="">
-										</a>
-										<button class="product-card__favorite favorite btn">
-											<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.63931 2.01073L10 2.38643L10.3607 2.01073C12.8646 -0.597339 17.3166 0.350241 18.9159 3.51494C19.6998 5.06631 19.8102 7.20034 18.5249 9.7697C17.2589 12.3007 14.6395 15.2447 9.99999 18.3969C5.3605 15.245 2.74107 12.3011 1.47506 9.77023C0.189843 7.20093 0.300147 5.06686 1.08413 3.51541C2.68343 0.350508 7.13548 -0.5973 9.63931 2.01073Z" stroke="#FE99C5"></path>
-											</svg>
-										</button>
-									</div>
-									<div class="product-card__desc">
-										<div class="product-card__subtitle">Производитель</div>
-										<a href="" class="product-card__title">Помидоры Мохито</a>
-										<div class="product-card__group">
-											<div class="product-card__price">270,00&nbsp;₽</div>
-											<div class="product-card__weight">300&nbsp;г.</div>
-										</div>
-										<button class="product-card__btn btn btn-green">
-											<span>В&nbsp;корзину</span>
-										</button>
-									</div>
-								</div>
-								<div class="product-card">
-									<div class="product-card__top">
-										<a class="product-card__img" href="">
-											<img src="img/product-card__img18.png" alt="">
-										</a>
-										<button class="product-card__favorite favorite btn">
-											<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.63931 2.01073L10 2.38643L10.3607 2.01073C12.8646 -0.597339 17.3166 0.350241 18.9159 3.51494C19.6998 5.06631 19.8102 7.20034 18.5249 9.7697C17.2589 12.3007 14.6395 15.2447 9.99999 18.3969C5.3605 15.245 2.74107 12.3011 1.47506 9.77023C0.189843 7.20093 0.300147 5.06686 1.08413 3.51541C2.68343 0.350508 7.13548 -0.5973 9.63931 2.01073Z" stroke="#FE99C5"/>
-											</svg>
-										</button>
-									</div>
-									<div class="product-card__desc">
-										<div class="product-card__subtitle">Производитель</div>
-										<a href="" class="product-card__title">Огурцы Луховицкие</a>
-										<div class="product-card__group">
-											<div class="product-card__price">355,00 ₽</div>
-											<div class="product-card__weight">300 г.</div>
-										</div>
-										<button class="product-card__btn btn btn-green">
-											<span>В корзину</span>
-										</button>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="map-section">
-				<div class="container">
-					<div class="map-section__inner">
-						<h2 class="map-section__title h2">Карта наших точек</h2>
-						<div class="map__wrap">
-							<div id="map" class="map"></div>
 						</div>
 					</div>
 				</div>
@@ -625,78 +770,6 @@
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
-	<script type="text/javascript">
-
-    let center = [55.755864, 37.617698];
-
-    function init() {
-        let map = new ymaps.Map('map', {
-            center: center,
-            zoom: 10
-        });
-
-        let mapObjects = [
-            {
-                text: "Щукино",
-                cords: [55.800595, 37.473519]
-            },
-            {
-                text: "Хамовники",
-                cords: [55.729199, 37.574534]
-            },
-            {
-                text: "Гальяново",
-                cords: [55.816819, 37.798242]
-            },
-            {
-                text: "Измайлово",
-                cords: [55.795373, 37.785494]
-            },
-        ]
-
-        mapObjects.forEach(object => {
-            let placemark = new ymaps.Placemark(object.cords, {
-                    balloonContent: `
-
-			<div class="balloon">
-			    <a href="" class="balloon__icon">
-			        <img src="img/whatsapp-icon.png" alt="">
-                </a>
-                <div class="balloon__desc">
-                    <div class="balloon__title">Войти в чат</div>
-                    <div class="balloon__text">${object.text}</div>
-                </div>
-			</div>
-
-		`
-                }, {
-                    iconLayout: 'default#image',
-                    iconImageHref: "img/map-icon.svg",
-                    iconImageSize: [45, 60],
-
-                    // iconImageOffset: [-15, -44]
-                },
-
-            );
-
-            map.geoObjects.add(placemark);
-            placemark.balloon.open();
-
-        })
-
-
-        map.controls.remove('geolocationControl');
-        map.controls.remove('searchControl');
-        map.controls.remove('trafficControl');
-        map.controls.remove('typeSelector');
-        map.controls.remove('fullscreenControl');
-        map.controls.remove('zoomControl');
-        map.controls.remove('rulerControl');
-    }
-
-    ymaps.ready(init);
-
-</script>
 </body>
 
 </html>
